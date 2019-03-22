@@ -1,0 +1,1 @@
+EZ Park Android Application has integrated Google Maps to develop a system that will provide users with the service of finding a nearby street and garage parking easily and helping users to save time regarding searching for a parking.
