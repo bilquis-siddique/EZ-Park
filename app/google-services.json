@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "957162301904",
+    "firebase_url": "https://ezpark-fc501.firebaseio.com",
+    "project_id": "ezpark-fc501",
+    "storage_bucket": "ezpark-fc501.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:957162301904:android:9f72327f02252876",
+        "android_client_info": {
+          "package_name": "ameya.com.maptest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "957162301904-aapdtgs72i9if8ljf7a0j0unk123or0v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBF55GcLs8i8C19Y7yIxs2V_VCWXAcnCYs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

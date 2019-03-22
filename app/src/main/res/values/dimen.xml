@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="item_height_small">150dp</dimen>
+    <dimen name="logo_w_h">175dp</dimen>
+    <dimen name="gap">3dp</dimen>
+    <dimen name="divider_height">@dimen/gap</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="spacing">10dp</dimen>
+    <dimen name="textSizeBtnSignup">15sp</dimen>
+    <dimen name="dimenLogoMarginBottom">30dp</dimen>
+    <dimen name="btnSignupMarginTop">20dip</dimen>
+    <dimen name="progressBarWidthHeight">30dp</dimen>
+    <dimen name="dp_ivPadding">20dp</dimen>
+    <dimen name="infoHeaderPaddingBottom">10dp</dimen>
+    <dimen name="viewHeight">2dp</dimen>
+    <dimen name="infoMajorPaddingTop">20dp</dimen>
+    <dimen name="linearLayoutMarginTop">30dp</dimen>
+    <dimen name="logoMarginBottom">10dp</dimen>
+    <dimen name="forgotPasswordTextViewPadding">10dp</dimen>
+    <dimen name="forgotPasswordMsgTextSize">14sp</dimen>
+    <dimen name="ForgotPasswordTV">10dp</dimen>
+    <dimen name="textSizePassword">20sp</dimen>
+    <dimen name="imageViewMarginBottom">30dp</dimen>
+    <dimen name="btnTextSize">15sp</dimen>
+    <dimen name="layoutPaddingLeft">20dp</dimen>
+</resources>

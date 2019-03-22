@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ProfileActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin">
+            <LinearLayout
+                android:background="@android:color/white"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:contentDescription="Profile picture"
+                    android:padding="@dimen/dp_ivPadding"
+                    android:id="@+id/dp_iv"
+                    android:background="@android:color/white"
+                    android:src="@drawable/ic_user_icon"
+                    android:layout_gravity="center"
+                    android:layout_width="350dp"
+                    android:layout_height="350dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/personal_info_container"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/info_header"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:text="Personal Info"
+                    android:paddingBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="#808080"/>
+                <EditText
+                    android:paddingTop="20dp"
+                    android:id="@+id/pinfo_fname"
+                    android:layout_width="match_parent"
+                    android:hint="First_name"
+                    android:inputType="text"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/pinfo_lname"
+                    android:layout_width="match_parent"
+                    android:hint="Last_name"
+                    android:inputType="text"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:id="@+id/change_personal_info_bt"
+                    android:text="change personal info"
+                    android:textColor="@android:color/white"
+                    android:layout_width="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/pace_info_container"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/pace_info_header"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:text="About yourself"
+                    android:paddingBottom="@dimen/infoHeaderPaddingBottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/viewHeight"
+                    android:background="#808080"/>
+                <EditText
+                    android:id="@+id/pace_info_major_minor"
+                    android:paddingTop="@dimen/infoMajorPaddingTop"
+                    android:layout_width="match_parent"
+                    android:hint="major_or_minor"
+                    android:inputType="text"
+                    android:layout_height="wrap_content" />
+                <RadioGroup
+                    android:id="@+id/pace_info_radio_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:id="@+id/grad_rdb_bt"
+                        android:text="graduate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <RadioButton
+                        android:id="@+id/ugrad_rd_bt"
+                        android:text="undergraduate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RadioGroup>
+                <EditText
+                    android:id="@+id/pace_info_grad_year"
+                    android:hint="graduation year or expected"
+                    android:layout_width="match_parent"
+                    android:inputType="number"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:id="@+id/change_pace_info_bt"
+                    android:text="Change 'About Yourself' column"
+                    android:textColor="@android:color/white"
+                    android:layout_width="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/old_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_email"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:singleLine="true" />
+            <EditText
+                android:id="@+id/new_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_new_email"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="true"
+                android:textColor="@android:color/white"
+                android:hint="@string/hint_password"
+                android:imeOptions="actionUnspecified"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/newPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="true"
+                android:hint="@string/new_pass"
+                android:imeOptions="actionUnspecified"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:singleLine="true" />
+            <Button
+                android:id="@+id/changeEmail"
+                style="?android:textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@color/colorPrimaryDark"
+                android:text="@string/btn_change"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/changePass"
+                style="?android:textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@color/colorPrimaryDark"
+                android:text="@string/btn_change"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/send"
+                style="?android:textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@color/colorPrimaryDark"
+                android:text="@string/btn_send"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                android:visibility="gone" />
+            <Button
+                android:id="@+id/change_pinfo_toggle_bt"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Change Personal info"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/change_paceinfo_toggle_bt"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Edit 'About yourself'"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:id="@+id/change_email_button"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/change_email"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/change_password_button"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/change_password"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/sending_pass_reset_button"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/send_password_reset_email"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:id="@+id/sign_out"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@color/colorPrimary"
+                android:text="@string/btn_sign_out"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>

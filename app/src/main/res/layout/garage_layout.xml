@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="380dp"
+    android:layout_height="600dp"
+    android:background="@android:color/black">
+    <TextView
+        android:id="@+id/close_button"
+        android:layout_width="match_parent"
+        android:text="X"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:layout_marginRight="10dp"
+        android:textSize="20dp"
+        android:textAlignment="viewEnd"
+         />
+    <TextView
+        android:id="@+id/parking_title1"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ListView
+        android:id="@+id/garagelist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/add_parking_btn"
+        android:background="@android:drawable/ic_menu_add"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

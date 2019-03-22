@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+    <TextView
+        android:text="Contact Us"
+        android:textSize="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="Call us at- 201-616-6225"
+        android:textSize="20dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="Email us at support@ezpark.com"
+        android:layout_width="match_parent"
+        android:textSize="20dp"
+
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="Visit us"
+        android:textSize="20dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="Office: 1 pace plz, New York City, NY 10038"
+        android:textSize="20dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="Office hours: Weekdays 10am -6pm"
+        android:textSize="20dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:id="@+id/backbtnhelp"
+        android:layout_width="wrap_content"
+        android:text="Back"
+        android:textSize="20dp"
+        android:layout_height="wrap_content" />
+</LinearLayout>

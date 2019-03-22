@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/option_get_place"
+        android:title="@string/option_get_place"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/add_garage"
+        android:icon="@android:drawable/btn_plus"
+        android:title="Add Garage Parking" />
+
+    <item android:id="@+id/add_marker"
+        android:icon="@android:drawable/btn_plus"
+        android:title="Add Recommendation" />
+    <item android:id="@+id/profile"
+        android:icon="@android:drawable/btn_plus"
+        android:title="Profile settings" />
+
+    <item android:id="@+id/help"
+        android:icon="@android:drawable/btn_plus"
+        android:title="Help" />
+    <item android:id="@+id/sign_out"
+        android:icon="@android:drawable/btn_plus"
+        android:title="Signout" />
+</menu>
